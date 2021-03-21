@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8"/> 
+        <link rel = "stylesheet" href = "css.css">
+        
+        <title>Curriculo</title>        
+</head>
+
+<header> 
+    <h1>Currículo Jackeline</h1>
+</header>
+
+<body>
+    
+    <section class="controles">
+        <p>Tela clara:</p>
+        <img id="acender" src="sol.png" alt=sol>
+        <p>Tela escura:</p>
+        <img id="escuro" src="nuvem.png" alt=lua>
+    </section>
+
+    
+    <img id="eu" src="perfil.jpeg" alt="jack" width= 300px height= 330px>
+
+    <article class= "regiao">
+        <h2>Informações pessoais</h2>
+        <p> Nome: Jackeline Ramos Santana</p>
+        <P> Idade: 18 anos</P>
+        <P> Data de nascimento: 09.08.2002</P>
+        <p> Email: jackelinejack59@gmail.com</p>    
+    </article>
+
+    <article class= "regiao">
+        <h3>EXPERIÊNCIA PROFISSIONAL</h3>
+            <p>Estética       
+                (04/2020 - hoje)</p>
+            <ul>
+                <li>Design de sobrancelhas </li>
+                <li>Limpeza de pele</li>
+    
+            </ul>
+    </article>
+
+    <article class= "regiao">
+        <h2>Qualidades</h2>
+            <li>Aprendo rápido</li>
+            <li>Esforçada</li>
+            <li>Esforçada</li>
+            <li>Trabalhadora</li>
+            <li>Alta precisão</li>
+            <li>Habilidosa com as mãos</li>
+            <li>Pontual</li>
+        </ul>
+    </article>
+
+    <article class= "regiao">
+        <h2>Idiomas</h2>
+        <p>Português fluente </p>
+        <p>Espanhol básico </p>
+        <p>Inglês básico </p>
+    </article>
+
+    <script src= "jquery-3.5.1.min.js"> </script>
+
+    <script> 
+
+        var foto = document.getElementById("eu")
+    
+        foto.onmouseover = function(){
+            foto.classList.remove("foto_sem_mouse");
+            foto.classList.add("foto_com_mouse");
+        }
+    
+        foto.onmouseout = function(){
+            foto.classList.remove("foto_com_mouse");
+            foto.classList.add("foto_sem_mouse");
+        }
+        
+    
+        $(document).ready(function() {
+        $("#acender").click(function(){
+            $("body").removeClass("escuro");
+            $("body").addClass("claro");
+    
+        })
+        $("#escuro").click(function(){
+            $("body").removeClass("claro");
+            $("body").addClass("escuro");
+        })
+    });
+    </script>
+
+    </body>
+</html>
+    
+
+
+
+
+
+    
+    
